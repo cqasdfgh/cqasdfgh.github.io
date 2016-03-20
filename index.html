@@ -30,10 +30,23 @@
 <a id="cqasdfghgithubio" class="anchor" href="#cqasdfghgithubio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>cqasdfgh.github.io</h1>
 
 <hr>
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("bulbon"))
+  {
+  element.src="/images/eg_bulboff.gif";
+  }
+else
+  {
+  element.src="/images/eg_bulbon.gif";
+  }
+}
+</script>
 
 <p>cqasdfgh的博客</p>
-<input type="text" name="username" />
-<button href="http://www.mcbbs.net/">click</button>
+<img id="myimage" onclick="changeImage()" src="/images/eg_bulboff.gif">
       </section>
     </div>
 
