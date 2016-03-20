@@ -32,14 +32,22 @@
 <hr>
 <p>cqasdfgh的博客</p>
 <input id="demo" type="text">
+<input id="demo_1" type="text">
 <script>
 function Test()
 {
 var x=document.getElementById("demo").value;
+var y=document.getElementById("demo_1").value;
+var z;
 if(x==""||isNaN(x)){
- alert("Not Numeric!"); 
+  if(y==""||isNaN(y)){
+    alert("Not Numeric!"); 
+  }else{
+    alert("Not Numeric!");
+  }
  }else{
-   alert("x is:"+x)
+   z=x*y;
+   alert("x*y is:"+z)
  }
 }
 </script>
