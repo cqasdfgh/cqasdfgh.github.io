@@ -30,23 +30,20 @@
 <a id="cqasdfghgithubio" class="anchor" href="#cqasdfghgithubio" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>cqasdfgh.github.io</h1>
 
 <hr>
+<p>cqasdfgh的博客</p>
+<input id="demo" type="text">
 <script>
-function changeImage()
+function Test()
 {
-element=document.getElementById('myimage')
-if (element.src.match("bulbon"))
-  {
-  element.src="/images/eg_bulboff.gif";
-  }
-else
-  {
-  element.src="/images/eg_bulbon.gif";
-  }
+var x=document.getElementById("demo").value;
+if(x==""||isNaN(x)){
+ alert("Not Numeric!"); 
+ }else{
+   alert("x is:"+x)
+ }
 }
 </script>
-
-<p>cqasdfgh的博客</p>
-<img id="myimage" onclick="changeImage()" src="/images/eg_bulboff.gif">
+<button type="button" onclick="Test()">点击这里</button>
       </section>
     </div>
 
