@@ -39,11 +39,8 @@ function Test()
 var x=document.getElementById("demo").value;
 var y=document.getElementById("demo_1").value;
 var z;
-if(x==""||isNaN(x)){
-  if(y==""||isNaN(y)){
-    alert("Not Numeric!"); 
-  }else{
-    alert("Not Numeric!");
+if(x==""||isNaN(x)&&y==""||isNaN(y)&&x==""||isNaN(x)||y==""||isNaN(y)&&x==""){
+   alert("Not Numeric");
   }
  }else{
    z=x*y;
