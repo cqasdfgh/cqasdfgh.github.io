@@ -42,6 +42,16 @@ if(x==""||isNaN(x)){
   alert(x+"^2="+x*x);
   } 
 }
+function Time()
+{
+var time=new Date().getHours();
+if (time<20)
+  {
+  alert("Good day");
+  }else{
+    alert("Good night");
+  }
+}
 </script>
 <button type="button" onclick="Test()">点击这里</button>
 <a href="http://www.mcbbs.net"><br>Visit MCCBBS<br></a>
@@ -53,6 +63,7 @@ if(x==""||isNaN(x)){
 <input type="password" name="password">
 </form>
 <p>
+<button onclick="Time()">点击这里_1</button>
       </section>
     </div>
 
