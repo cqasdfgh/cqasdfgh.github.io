@@ -9,6 +9,27 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>cqasdfgh的博客</title>
+    <script>
+function Test()
+{
+var x=document.getElementById("demo").value;
+if(x==""||isNaN(x)){
+  alert("Not Numeric");
+}else{
+  alert(x+"^2="+x*x);
+  } 
+}
+function Time()
+{
+var time=new Date().getHours();
+if (time<20)
+  {
+  alert("Good day");
+  }else{
+    alert("Good night");
+  }
+}
+</script>
   </head>
 
   <body>
@@ -32,27 +53,6 @@
 <hr>
 <p>cqasdfgh的博客</p>
 <input id="demo" type="text">
-<script>
-function Test()
-{
-var x=document.getElementById("demo").value;
-if(x==""||isNaN(x)){
-  alert("Not Numeric");
-}else{
-  alert(x+"^2="+x*x);
-  } 
-}
-function Time()
-{
-var time=new Date().getHours();
-if (time<20)
-  {
-  alert("Good day");
-  }else{
-    alert("Good night");
-  }
-}
-</script>
 <button type="button" onclick="Test()">点击这里</button>
 <a href="http://www.mcbbs.net"><br>Visit MCCBBS<br></a>
 <form>
