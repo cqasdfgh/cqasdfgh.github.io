@@ -73,6 +73,17 @@ function abs(x) {
 
 <button onclick="Time()">点击这里_1</button><br/><br/>
 <button onclick="abs(5)">点击这里_2</button>
+<!--打分版，用户可以对当前新闻、游戏或者应用等进行1-5级的评分-->
+<div id="SOHUCS"></div>
+<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window._config = { showScore: true };
+    window.changyan.api.config({
+        appid: 'cys7X4h7f',
+        conf: 'prod_1575b35a3dbd754f806bc44eb345dadd'
+    });
+</script> 
+
       </section>
     </div>
 
